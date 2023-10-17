@@ -3,8 +3,8 @@
 
     <item android:title="home"
         android:id="@+id/home"
-        android:icon="@drawable/home"/>
-    <item android:title="seeearch"
+        android:icon="@drawable/iconhome"/>
+    <item android:title="search"
         android:id="@+id/search"
         android:icon="@drawable/search"/>
     <item android:title="profil"

@@ -13,7 +13,37 @@
         android:theme="@style/Theme.Fagmentnavbarhome"
         tools:targetApi="31">
         <activity
+            android:name=".activity_menu_quiz"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_perbarui_kata_sandi"
+            android:exported="false" />
+        <activity
+            android:name=".activity_lupa_kata_sandi"
+            android:exported="false" />
+        <activity
+            android:name=".activity_konfirmasi_kode_email"
+            android:exported="false" />
+        <activity
+            android:name=".activity_berhasil_rubah_katasandi"
+            android:exported="false" />
+        <activity
+            android:name=".activity_Buat_katasandibaru"
+            android:exported="false" />
+        <activity
+            android:name=".activity_berhasil_buat_akun"
+            android:exported="false" />
+        <activity
+            android:name=".activity_Login"
+            android:exported="false" />
+        <activity
+            android:name=".activity_Buat_Akun"
+            android:exported="false" />
+        <activity
+            android:name=".activity_splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

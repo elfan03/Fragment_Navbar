@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#2196F3"
     tools:context=".fragment_Home">
 
 
@@ -38,7 +37,7 @@
             android:id="@+id/lip"
             android:layout_width="49dp"
             android:layout_height="107dp"
-            app:srcCompat="@drawable/profil" />
+            app:srcCompat="@drawable/profile" />
 
         <LinearLayout
             android:layout_width="272dp"
@@ -93,8 +92,9 @@
             tools:layout_editor_absoluteY="227dp" />
 
         <LinearLayout
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
-            android:layout_height="187dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
             android:orientation="horizontal">
@@ -139,8 +139,9 @@
         </LinearLayout>
 
         <TextView
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="20dp"
             android:backgroundTint="#465770"
             android:gravity="center"
             android:hint="Halaman yang mungkin kamu sukai"
@@ -150,7 +151,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             tools:ignore="MissingConstraints,TouchTargetSizeCheck"
             tools:layout_editor_absoluteY="227dp" />
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="0dp"
+            android:background="@color/black"></View>
         <LinearLayout
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
@@ -160,19 +165,22 @@
 
             <Button
                 android:layout_width="139dp"
-                android:layout_height="79dp"
+                android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:background="@drawable/butonshape"
                 android:drawablePadding="10dp"
-
                 android:text="Cuplikan video trik cepat"
                 android:textColor="@color/white"
                 android:textSize="10sp"
-                tools:ignore="TouchTargetSizeCheck"></Button>
+                android:padding="10dp"
+                tools:ignore="TouchTargetSizeCheck">
+
+            </Button>
 
             <Button
+                android:padding="10dp"
                 android:layout_width="139dp"
-                android:layout_height="79dp"
+                android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/butonshape"
@@ -186,14 +194,16 @@
         </LinearLayout>
 
         <LinearLayout
+
             android:layout_width="match_parent"
             android:layout_height="90dp"
             android:orientation="horizontal"
             android:gravity="center">
 
             <Button
+                android:padding="10dp"
                 android:layout_width="139dp"
-                android:layout_height="79dp"
+                android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:background="@drawable/butonshape"
                 android:drawablePadding="10dp"
@@ -202,8 +212,9 @@
                 android:textSize="10sp"
                 tools:ignore="TouchTargetSizeCheck"></Button>
             <Button
+                android:padding="10dp"
                 android:layout_width="139dp"
-                android:layout_height="79dp"
+                android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/butonshape"
