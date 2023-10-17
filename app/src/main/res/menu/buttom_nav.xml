@@ -4,7 +4,7 @@
     <item android:title="home"
         android:id="@+id/home"
         android:icon="@drawable/home"/>
-    <item android:title="search"
+    <item android:title="seeearch"
         android:id="@+id/search"
         android:icon="@drawable/search"/>
     <item android:title="profil"

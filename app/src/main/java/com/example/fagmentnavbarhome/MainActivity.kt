@@ -2,7 +2,6 @@ package com.example.fagmentnavbarhome
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.ContactsContract.Profile
 import androidx.fragment.app.Fragment
 import com.example.fagmentnavbarhome.databinding.ActivityMainBinding
 
@@ -13,13 +12,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        replaceFragment(Home())
+        replaceFragment(fragment_Home())
 
         binding.bottomNavigationView.setOnItemReselectedListener {
             when(it.itemId){
-                R.id.home ->replaceFragment(Home())
-                R.id.search ->replaceFragment(search())
-                R.id.profil ->replaceFragment(profil())
+                R.id.home ->replaceFragment(fragment_Home())
+                R.id.search ->replaceFragment(Fragment_search())
+                R.id.profil ->replaceFragment(Fragment_profil())
 
                 else ->{
 

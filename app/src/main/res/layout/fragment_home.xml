@@ -1,18 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#2196F3"
-    tools:context=".Home">
+    tools:context=".fragment_Home">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="219dp"
+        android:background="@drawable/home"
+        android:outlineSpotShadowColor="@color/black"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:orientation="vertical"
+        android:padding="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="131dp"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/lip"
+            android:layout_width="49dp"
+            android:layout_height="107dp"
+            app:srcCompat="@drawable/profil" />
+
+        <LinearLayout
+            android:layout_width="272dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HAI,  Regina Bara!"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selamat Datang di Math-Fun"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textSize="30dp"
-        android:text=" Home" />
+        android:layout_marginTop="200dp"
+        android:padding="20dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
 
-</FrameLayout>
+        <EditText
+            android:id="@+id/edt_masukanemail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/butonshape"
+            android:backgroundTint="@color/search"
+            android:drawableStart="@drawable/iconpencarian"
+            android:drawablePadding="5dp"
+            android:hint="Yuk, cari materi belajar disini"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/abu"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteY="227dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_latihan"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/butonshape"
+                android:drawableTop="@drawable/latihan"
+                android:text="latihan"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                tools:ignore="TouchTargetSizeCheck"></Button>
+
+            <Button
+                android:id="@+id/btn_quiz"
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/butonshape"
+                android:drawableTop="@drawable/latihan"
+                android:text="Quiz"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                tools:ignore="TouchTargetSizeCheck"></Button>
+            <Button
+                android:id="@+id/btn_videopembelajaran"
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/butonshape"
+                android:drawableTop="@drawable/latihan"
+                android:text="Video"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                tools:ignore="TouchTargetSizeCheck"></Button>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:backgroundTint="#465770"
+            android:gravity="center"
+            android:hint="Halaman yang mungkin kamu sukai"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteY="227dp" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="139dp"
+                android:layout_height="79dp"
+                android:layout_gravity="center"
+                android:background="@drawable/butonshape"
+                android:drawablePadding="10dp"
+
+                android:text="Cuplikan video trik cepat"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                tools:ignore="TouchTargetSizeCheck"></Button>
+
+            <Button
+                android:layout_width="139dp"
+                android:layout_height="79dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/butonshape"
+                android:drawablePadding="10dp"
+
+                android:text="Cuplikan video trik cepat"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                tools:ignore="TouchTargetSizeCheck"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="139dp"
+                android:layout_height="79dp"
+                android:layout_gravity="center"
+                android:background="@drawable/butonshape"
+                android:drawablePadding="10dp"
+                android:text="Cuplikan video trik cepat"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                tools:ignore="TouchTargetSizeCheck"></Button>
+            <Button
+                android:layout_width="139dp"
+                android:layout_height="79dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/butonshape"
+                android:drawablePadding="10dp"
+                android:text="Cuplikan video trik cepat"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                tools:ignore="TouchTargetSizeCheck"></Button>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
