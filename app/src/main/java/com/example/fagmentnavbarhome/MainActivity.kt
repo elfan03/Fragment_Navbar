@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.bottom_home ->replaceFragment(fragment_Home())
                 R.id.bottom_search ->replaceFragment(Fragment_search())
                 R.id.bottom_profil ->replaceFragment(Fragment_profil())
+                R.id.bottom_video ->replaceFragment(fragment_video())
 
                 else ->{
 
