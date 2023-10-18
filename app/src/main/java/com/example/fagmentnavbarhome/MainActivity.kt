@@ -16,9 +16,9 @@ class MainActivity : AppCompatActivity() {
 
         binding.bottomNavigationView.setOnItemReselectedListener {
             when(it.itemId){
-                R.id.home ->replaceFragment(fragment_Home())
-                R.id.search ->replaceFragment(Fragment_search())
-                R.id.profil ->replaceFragment(Fragment_profil())
+                R.id.bottom_home ->replaceFragment(fragment_Home())
+                R.id.bottom_search ->replaceFragment(Fragment_search())
+                R.id.bottom_profil ->replaceFragment(Fragment_profil())
 
                 else ->{
 
