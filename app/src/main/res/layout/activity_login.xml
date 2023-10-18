@@ -49,13 +49,14 @@
             android:layout_height="45dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/butonshape3"
-            android:fontFamily="@font/lato"
             android:drawablePadding="5dp"
+            android:fontFamily="@font/lato"
             android:hint="Masukan username"
             android:inputType="textPersonName"
             android:paddingLeft="20dp"
             android:textColor="@color/black"
-            android:textColorHint="@color/textisi" />
+            android:textColorHint="@color/textisi"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
             android:fontFamily="@font/lato"
@@ -69,19 +70,19 @@
             tools:ignore="TextSizeCheck" />
 
         <EditText
-            android:fontFamily="@font/lato"
             android:id="@+id/edt_masukansandi"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/butonshape3"
             android:drawablePadding="5dp"
+            android:fontFamily="@font/lato"
             android:hint="Masukan kata sandi"
             android:inputType="numberPassword"
             android:paddingLeft="20dp"
             android:textColor="@color/black"
-            android:textColorHint="@color/textisi" />
-
+            android:textColorHint="@color/textisi"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/btnmasuk"
